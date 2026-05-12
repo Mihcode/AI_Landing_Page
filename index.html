@@ -28,15 +28,9 @@
     </script>
 
     <style>
-        /* Fallback font nếu máy không có FS Magistral */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
-        
         body { font-family: 'FS Magistral', 'Inter', sans-serif; }
-        
-        /* Hiệu ứng cuộn mượt */
         html { scroll-behavior: smooth; }
-        
-        /* Accordion CSS */
         .faq-content {
             max-height: 0;
             overflow: hidden;
@@ -62,10 +56,20 @@
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkz4SjtN6DknCG7DJQjLVcMn2CWD5DMU31rhvZ1BOXWuWn9Q/viewform?usp=dialog" target="_blank" class="bg-viettelRed text-white px-5 py-2 rounded-md font-bold hover:bg-red-700 transition shadow-md">ĐĂNG KÝ</a>
                 </div>
                 <div class="md:hidden flex items-center">
-                    <button class="text-gray-600 hover:text-viettelRed focus:outline-none">
+                    <button onclick="toggleMobileMenu()" class="text-gray-600 hover:text-viettelRed focus:outline-none">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="#loi-ich" onclick="toggleMobileMenu()" class="block text-gray-600 hover:text-viettelRed font-semibold py-2">Lợi Ích</a>
+                <a href="#chuong-trinh" onclick="toggleMobileMenu()" class="block text-gray-600 hover:text-viettelRed font-semibold py-2">Chương Trình</a>
+                <a href="#to-chuc" onclick="toggleMobileMenu()" class="block text-gray-600 hover:text-viettelRed font-semibold py-2">Thông Tin</a>
+                <a href="#faq" onclick="toggleMobileMenu()" class="block text-gray-600 hover:text-viettelRed font-semibold py-2">FAQ</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkz4SjtN6DknCG7DJQjLVcMn2CWD5DMU31rhvZ1BOXWuWn9Q/viewform?usp=dialog" target="_blank" class="block text-center bg-viettelRed text-white px-5 py-3 rounded-md font-bold mt-2">ĐĂNG KÝ NGAY</a>
             </div>
         </div>
     </nav>
@@ -140,10 +144,20 @@
 
     <section id="chuong-trinh" class="py-20 bg-viettelLight">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
+            <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-viettelDark mb-4">Nội Dung Chương Trình (Thực Chiến 100%)</h2>
-                <p class="text-gray-600">Giảng viên: Đ/c Mai Hoàng Minh – Phòng Mạng Lõi</p>
                 <div class="w-24 h-1 bg-viettelRed mx-auto mt-4"></div>
+            </div>
+
+            <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-12 flex items-center gap-6">
+                <div class="w-20 h-20 rounded-full overflow-hidden border-2 border-viettelRed flex-shrink-0">
+                    <img src="avatar.png" alt="Giảng viên" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/100x100/E30613/FFFFFF?text=GV'">
+                </div>
+                <div>
+                    <p class="text-sm text-gray-500 font-semibold uppercase tracking-wide">Người hướng dẫn</p>
+                    <h4 class="text-xl font-bold text-viettelDark">Đ/c Mai Hoàng Minh</h4>
+                    <p class="text-gray-600"><i class="fas fa-network-wired text-viettelRed mr-2"></i>Phòng Mạng Lõi - TCT Mạng lưới</p>
+                </div>
             </div>
 
             <div class="flex flex-col md:flex-row gap-8">
@@ -263,6 +277,7 @@
     </footer>
 
     <script>
+        // Hàm ẩn/hiện FAQ
         function toggleFaq(button) {
             const content = button.nextElementSibling;
             const icon = button.querySelector('.fa-chevron-down');
@@ -273,6 +288,16 @@
             } else {
                 content.style.maxHeight = content.scrollHeight + "px";
                 icon.style.transform = "rotate(180deg)";
+            }
+        }
+
+        // Hàm ẩn/hiện Menu Mobile
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
             }
         }
     </script>
