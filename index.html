@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đào Tạo Nội Bộ: Hướng Dẫn Tạo Slide Bằng AI - Viettel Networks</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        viettelRed: '#E30613',
+                        viettelDark: '#000000',
+                        viettelLight: '#F3F3F3',
+                    },
+                    fontFamily: {
+                        sans: ['FS Magistral', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Fallback font nếu máy không có FS Magistral */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        
+        body { font-family: 'FS Magistral', 'Inter', sans-serif; }
+        
+        /* Hiệu ứng cuộn mượt */
+        html { scroll-behavior: smooth; }
+        
+        /* Accordion CSS */
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-white text-viettelDark antialiased">
+
+    <nav class="fixed w-full bg-white shadow-sm z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <img class="h-8 w-auto" src="https://placehold.co/150x50/E30613/FFFFFF?text=Viettel+Logo" alt="Viettel Networks Logo">
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#loi-ich" class="text-gray-600 hover:text-viettelRed font-semibold transition">Lợi Ích</a>
+                    <a href="#chuong-trinh" class="text-gray-600 hover:text-viettelRed font-semibold transition">Chương Trình</a>
+                    <a href="#to-chuc" class="text-gray-600 hover:text-viettelRed font-semibold transition">Thông Tin</a>
+                    <a href="#faq" class="text-gray-600 hover:text-viettelRed font-semibold transition">FAQ</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="#dang-ky" class="bg-viettelRed text-white px-5 py-2 rounded-md font-bold hover:bg-red-700 transition shadow-md">ĐĂNG KÝ</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-600 hover:text-viettelRed focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-28 pb-20 bg-viettelLight">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-left pr-0 md:pr-10 mb-10 md:mb-0">
+                <span class="inline-block bg-white text-viettelRed font-bold px-3 py-1 rounded-full text-sm mb-4 border border-red-200 shadow-sm">
+                    <i class="far fa-clock mr-1"></i> Hạn cuối đăng ký: 06/5/2026
+                </span>
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-6 text-viettelDark">
+                    Đào Tạo Nội Bộ: Hướng Dẫn Tạo Slide Bằng AI <span class="text-viettelRed">Cơ Bản & Nâng Cao</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8">
+                    Làm chủ Gemini, Claude, Canva... để thiết kế slide và landing page chuyên nghiệp, phục vụ công việc hàng ngày nhanh chóng, hiệu quả.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#dang-ky" class="text-center bg-viettelRed text-white px-8 py-3 rounded-md font-bold text-lg hover:bg-red-700 transition shadow-lg">
+                        ĐĂNG KÝ THAM GIA NGAY
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://placehold.co/600x400/E30613/FFFFFF?text=AI+Slide+Design+Illustration" alt="AI Presentation Design" class="rounded-lg shadow-xl w-full">
+            </div>
+        </div>
+    </section>
+
+    <section id="loi-ich" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-viettelDark mb-4">Khóa Học Này Dành Cho Ai & Bạn Nhận Được Gì?</h2>
+                <div class="w-24 h-1 bg-viettelRed mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-lg hover:shadow-xl transition relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gray-200 group-hover:bg-viettelRed transition"></div>
+                    <div class="w-12 h-12 bg-red-50 text-viettelRed rounded-lg flex items-center justify-center text-2xl mb-4">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Đáp ứng KNL</h3>
+                    <p class="text-gray-600">Dành cho CBCNV cần chứng nhận hoàn thành khóa học để đáp ứng tiêu chuẩn Kỹ năng lõi (KNL).</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-lg hover:shadow-xl transition relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gray-200 group-hover:bg-viettelRed transition"></div>
+                    <div class="w-12 h-12 bg-red-50 text-viettelRed rounded-lg flex items-center justify-center text-2xl mb-4">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Tối ưu hiệu suất</h3>
+                    <p class="text-gray-600">Dành cho người muốn ứng dụng AI để tối ưu thời gian làm slide, tài liệu hoặc tạo landing page.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-lg hover:shadow-xl transition relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gray-200 group-hover:bg-viettelRed transition"></div>
+                    <div class="w-12 h-12 bg-red-50 text-viettelRed rounded-lg flex items-center justify-center text-2xl mb-4">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Chứng nhận nội bộ</h3>
+                    <p class="text-gray-600">Học viên hoàn thành khóa học sẽ được cấp chứng nhận đào tạo nội bộ chính thức.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-lg hover:shadow-xl transition relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gray-200 group-hover:bg-viettelRed transition"></div>
+                    <div class="w-12 h-12 bg-red-50 text-viettelRed rounded-lg flex items-center justify-center text-2xl mb-4">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Kho tài nguyên</h3>
+                    <p class="text-gray-600">Sở hữu tài liệu "đọc là làm ngay", bộ Template Prompt mẫu và cẩm nang Claude mở rộng.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="chuong-trinh" class="py-20 bg-viettelLight">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-viettelDark mb-4">Nội Dung Chương Trình (Thực Chiến 100%)</h2>
+                <p class="text-gray-600">Giảng viên: Đ/c Mai Hoàng Minh – Phòng Mạng Lõi</p>
+                <div class="w-24 h-1 bg-viettelRed mx-auto mt-4"></div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="flex-1 bg-white p-8 rounded-2xl shadow-md border-t-4 border-gray-800">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-layer-group text-viettelRed mr-3"></i> Phần Cơ Bản</h3>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> Cách xây dựng tài liệu chuẩn, logic, có cấu trúc rõ ràng.</li>
+                        <li class="flex"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> Sử dụng AI (Claude, Gemini, NotebookLM...) tạo slide bám sát nhận diện thương hiệu Viettel.</li>
+                        <li class="flex"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> Kỹ năng tinh chỉnh, làm đẹp slide bằng Canva và Claude for PowerPoint.</li>
+                    </ul>
+                </div>
+                <div class="flex-1 bg-white p-8 rounded-2xl shadow-md border-t-4 border-viettelRed">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-rocket text-viettelRed mr-3"></i> Phần Nâng Cao</h3>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex"><i class="fas fa-check text-viettelRed mt-1 mr-3"></i> <strong>Kỹ năng thiết kế Skill (Claude):</strong> Xây dựng skill dàn trang, làm báo cáo, công văn, tờ trình để dùng lại/chia sẻ cho đội nhóm.</li>
+                        <li class="flex"><i class="fas fa-check text-viettelRed mt-1 mr-3"></i> <strong>Tạo Landing Page:</strong> Tự tay thiết kế trang CV cá nhân, giới thiệu khóa học, hoặc bài giảng dạng HTML.</li>
+                        <li class="flex"><i class="fas fa-check text-viettelRed mt-1 mr-3"></i> <strong>Xuất bản:</strong> Hướng dẫn cách public trang landing page hoàn chỉnh thông qua Github.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="to-chuc" class="mt-16 bg-white rounded-xl shadow-sm border border-gray-200 p-8">
+                <h3 class="text-xl font-bold mb-6 text-center">Thông Tin Tổ Chức & Yêu Cầu Đầu Ra</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <div>
+                        <i class="far fa-calendar-alt text-3xl text-gray-400 mb-3"></i>
+                        <p class="font-bold">Thời gian & Địa điểm</p>
+                        <p class="text-sm text-gray-600">08h30 - 12h00, T6 (08/5/2026).<br>Tầng G Tòa nhà Thái Bình / Zoom.</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-laptop-code text-3xl text-gray-400 mb-3"></i>
+                        <p class="font-bold">Yêu cầu đầu vào</p>
+                        <p class="text-sm text-gray-600">Tự trang bị máy tính.<br>Nên có sẵn tài khoản trả phí.</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-clipboard-check text-3xl text-viettelRed mb-3"></i>
+                        <p class="font-bold">Đánh giá sản phẩm</p>
+                        <p class="text-sm text-gray-600">Chấm tự động bằng AI (Đạt >= 7đ)<br>01 Slide AI (8đ) + 01 LP (2đ).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-viettelDark mb-4">Câu Hỏi Thường Gặp</h2>
+                <div class="w-24 h-1 bg-viettelRed mx-auto"></div>
+            </div>
+
+            <div class="space-y-4">
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full px-6 py-4 text-left font-bold flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        Tôi chưa từng sử dụng AI trước đây có học được không?
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content bg-gray-50 px-6">
+                        <p class="py-4 text-gray-600">Hoàn toàn được. Khóa học được thiết kế từ cơ bản đến nâng cao. Giảng viên sẽ hướng dẫn chi tiết từng bước (step-by-step) để người mới bắt đầu cũng có thể nắm bắt và thực hành ngay lập tức.</p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full px-6 py-4 text-left font-bold flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        Cần chuẩn bị những tài khoản AI nào trước khóa học?
+                        <button class="hidden"></button>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content bg-gray-50 px-6">
+                        <p class="py-4 text-gray-600">Học viên nên chuẩn bị sẵn tài khoản Gemini, Claude, và Canva (ưu tiên tài khoản trả phí nếu có để trải nghiệm đầy đủ tính năng). Nếu chỉ có bản miễn phí, bạn vẫn có thể thực hành được phần lớn nội dung.</p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full px-6 py-4 text-left font-bold flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        Làm sao để nhận link tham gia qua Zoom?
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content bg-gray-50 px-6">
+                        <p class="py-4 text-gray-600">Link Zoom sẽ được gửi qua Email nội bộ và nhóm chat truyền thông cho các học viên đã hoàn thành Form đăng ký trước ngày 06/5/2026.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dang-ky" class="py-20 bg-viettelDark text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full border-4 border-viettelRed opacity-20"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full border-4 border-gray-800 opacity-50"></div>
+        
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Đừng bỏ lỡ cơ hội nâng cấp kỹ năng làm việc với AI!</h2>
+            <p class="text-gray-300 text-lg mb-10">Hãy điền Form đăng ký (Bao gồm: Mã NV, Họ tên, Mức độ kỹ năng AI, Mục đích tham gia) để Ban tổ chức chuẩn bị hỗ trợ bạn tốt nhất.</p>
+            <a href="#" class="inline-block bg-viettelRed text-white px-10 py-4 rounded-md font-bold text-xl hover:bg-white hover:text-viettelRed transition shadow-[0_0_15px_rgba(227,6,19,0.5)]">
+                ĐIỀN FORM ĐĂNG KÝ TẠI ĐÂY
+            </a>
+            <p class="mt-4 text-sm text-gray-400"><i class="fas fa-exclamation-circle"></i> Hạn chót đăng ký: 06/5/2026</p>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-gray-200 pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+                <div class="text-center md:text-left">
+                    <img class="h-10 w-auto mb-4 mx-auto md:mx-0" src="https://placehold.co/150x50/000000/FFFFFF?text=Viettel+Logo" alt="Viettel Networks">
+                    <p class="text-gray-500 text-sm">© 2026 Viettel Networks. Chương trình Đào tạo Nội bộ.</p>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <h4 class="font-bold text-viettelDark mb-3">Hỗ Trợ & Giải Đáp</h4>
+                    <p class="text-gray-600 text-sm mb-1">Đ/c Huydq52 – Phòng Mạng lõi, TCT Mạng lưới</p>
+                    <p class="text-gray-600 text-sm mb-1"><i class="fas fa-phone-alt text-viettelRed mr-2"></i> 0354611206</p>
+                    <p class="text-gray-600 text-sm"><i class="fas fa-envelope text-viettelRed mr-2"></i> huydq52@viettel.com.vn</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.fa-chevron-down');
+            
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                icon.style.transform = "rotate(0deg)";
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                icon.style.transform = "rotate(180deg)";
+            }
+        }
+    </script>
+</body>
+</html>
